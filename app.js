@@ -3,6 +3,7 @@ console.log("Welcome to notes app");
 //If user adds a note, add it to the local storage
 let addBtn = document.getElementById('addbtn');
 window.onload = showNotes();
+
 addBtn.addEventListener('click', function (e) {
     let addTxt = document.getElementById('addTxt');
     let addTitle = document.getElementById('addTitle');
@@ -39,7 +40,7 @@ function showNotes() {
                 <div class="card-body">
                     <h5 class="card-title">${element.title}</h5>
                     <p class="card-text">${element.text}</p>
-                    <button id="${index}" onclick="deleteNote(this.id)" class="btn btn-primary">Delete Note</button>
+                    <button id="${index}" onclick="deleteNote(this.id)" class="btn btn-dark btn-sm">Delete Note</button>
                 </div>
             </div>
         `
