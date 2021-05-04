@@ -2,7 +2,7 @@ console.log("Welcome to notes app");
 
 //If user adds a note, add it to the local storage
 let addBtn = document.getElementById('addbtn');
-
+window.onload = showNotes();
 addBtn.addEventListener('click', function (e) {
     let addTxt = document.getElementById('addTxt');
     let addTitle = document.getElementById('addTitle');
